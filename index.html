@@ -3,10 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Encriptador ONE</title>
 </head>
 <body>
-    
+    <header>
+        <img src="./assets/Logo@2x.png" alt="Logo alura." class="logo">
+    </header>
+    <main class="encriptador">
+        <section class="encriptador_ingreso">
+            <textarea class="text_area" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="info">
+                <span class="information">
+                    <img class="logo_info" src="./assets/bi_exclamation-circle-fill.png" alt="">Solo letras minisculas y sin acento.
+                </span>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-encript" onclick="btn_encript()">Encriptar</button>
+                <button class="btn btn-decript" onclick="btn_decript()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="encriptador_salida">
+            <textarea class="message" id="" disabled></textarea>
+            <h4 class="salida_titulo">Ningun mensaje fue encontrado</h4>
+            <p class="salida_parrafo">Ingrese el texto que desee encriptar o desencriptar</p>
+            <div class="">
+                <button class=" btn btn-copy"onclick="btn_copy()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollador por Montana.©</p>
+    </footer>
 </body>
 <script src="./app.js"></script>
 </html>
